@@ -4,7 +4,7 @@ $font-family-sans-serif:         'Mountains of Christmas', cursive;
 $body-bg:                        #C9D1D3;
 $navbar-default-bg:              white;
 $navbar-default-link-color:      black;
-$navbar-default-link-hover-bg:   #20F856;
+$navbar-default-link-hover-bg:   #FF003D;
 $navbar-default-brand-hover-bg:  #20F856;
 $btn-primary-bg:                 #FF003D;
 $btn-default-bg:                 #20F856; 
@@ -28,4 +28,9 @@ $jumbotron-bg:                   #F0F0F0;
     background-repeat: no-repeat;
     color: black;
     text-shadow: gray 0.1em 0.1em 0.1em;
+}
+
+.normal-text {
+  font-family: 'Lato';
+  font-size: 20px;
 }
