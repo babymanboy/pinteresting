@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato|Mountains+of+Christmas);
 
 $font-family-sans-serif:         'Mountains of Christmas', cursive; 
+$font-size-base:                 18px;
 $body-bg:                        #C9D1D3;
 $navbar-default-bg:              white;
 $navbar-default-link-color:      black;
@@ -34,7 +35,7 @@ $jumbotron-bg:                   #F0F0F0;
 .normal-text {
   font-family: 'Lato';
   font-size: 20px;
-  color: #20F856;
+  color: #FF003D;
 }
 
 .block {
