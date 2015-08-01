@@ -22,7 +22,6 @@ class PinsController < ApplicationController
 
   def create
     @pin = current_user.pins.build(pin_params)
-
     if @pin.save
       redirect_to @pin, notice: 'Ornament was successfully hung.'
     else
@@ -41,8 +40,10 @@ class PinsController < ApplicationController
 
 
   def destroy
-    @pin.destroy
-    format.html { redirect_to pins_url, notice: 'Ornament was successfully destroyed.' }
+    respond_to do |format|
+      @pin.destroy
+      format.html { redirect_to pins_url, notice: 'Ornament was successfully destroyed.' }
+      end
     end
   end
 
@@ -58,6 +59,6 @@ class PinsController < ApplicationController
     end  
 
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :image)
     end
 

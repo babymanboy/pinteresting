@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
+<%= image_tag @pin.image.url(:medium) %>
 
 <p>
-  <div class="normal-text">  
     <strong>Description:</strong>
-  </div>
     <%= @pin.description %>
 </p>
 
