@@ -42,8 +42,7 @@ class PinsController < ApplicationController
   def destroy
     respond_to do |format|
       @pin.destroy
-      flash.now[:notice] = "Ornament was successfully destroyed"
-      format.html { redirect_to pins_url }
+      format.html { redirect_to pins_url, notice: 'Ornament was successfully destroyed.' }
       end
     end
   end
