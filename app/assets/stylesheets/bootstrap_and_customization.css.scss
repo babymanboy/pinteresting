@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato|Mountains+of+Christmas);
+@import url(https://fonts.googleapis.com/css?family=Signika+Negative|Mountains+of+Christmas);
 
 $font-family-sans-serif:         'Mountains of Christmas', cursive; 
 $body-bg:                        #C9D1D3;
@@ -25,7 +25,7 @@ $pagination-color:               black;
 
 .navbar-brand {
   font-weight: bold;
-  font-family: 'Lato';
+  font-family: 'Monda';
 }
 
 .jumbotron {
@@ -38,8 +38,16 @@ $pagination-color:               black;
  
 }
 
+h2 {
+  color: #FF003D;
+}
+
+p {
+  font-family:'Signika Negative';
+}
+
 .normal-text {
-  font-family: 'Lato';
+  font-family: 'Signika Negative';
   font-size: 20px;
   color: #FF003D;
 }

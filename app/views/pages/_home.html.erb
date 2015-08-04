@@ -1,9 +1,14 @@
 <div class="jumbotron center">
   <div class="block">
-    <h1> Welcome to ChristmasWolf! </h1>
-    <p>  
-      <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-      <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-    </p>  
+    <% if user_signed_in? %> 
+      <h2> <%= "#{days_until_christmas} Days until Christmas!" %> </h2>
+    <% else %>
+      <h1> Welcome to ChristmasWolf! </h1>
+      <h2> <%= "#{days_until_christmas} Days until Christmas!" %> </h2>
+      <p>  
+        <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+      </p>  
+    <% end %>
   </div>  
 </div>
