@@ -14,6 +14,7 @@ $link-hover-color:               #20F856;
 $pagination-active-bg:           #20F856; 
 $pagination-active-border:       #FF003D;
 $pagination-color:               black;
+          
 
 @import 'bootstrap';
 
@@ -27,6 +28,12 @@ $pagination-color:               black;
   font-weight: bold;
   font-family: 'Monda';
 }
+
+.panel-footer {
+  background:   #D7DDDE;
+  text-align:   center;
+}
+
 
 .jumbotron {
     margin-bottom: 0px;
