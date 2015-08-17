@@ -1,24 +1,28 @@
-<%= link_to pins_path do %>
-  <span class="glyphicon glyphicon-arrow-left"></span> Back
-<% end %>
+<div class="container">
+  <button type="button" class="btn btn-lg">
+     <%= link_to pins_path do %>
+        <span class="glyphicon glyphicon-arrow-left"></span> Back
+     <% end %>
+  </button> 
 
-<div class="row">
-  <div class="col-md-offset-2 col-md-8">
-    <div class="panel panel-default">
-      <div class="panel-heading center">
-        <%= image_tag @pin.image.url (:large) %>
-      </div>
-      <div class="panel-body">  
-        <p><%= @pin.description %></p>
-        <p><strong><%= @pin.user.name if @pin.user %></strong></p>
-        <p><%= @pin.created_at.strftime("%m-%d-%y") %></p>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <div class="panel panel-default"> 
+        <div class="panel-heading center">
+          <%= image_tag @pin.image.url (:large) %>
+        </div>
+        <div class="panel-body">  
+          <p><%= @pin.description %></p>
+          <p><strong><%= @pin.user.name if @pin.user %></strong></p>
+          <p><%= @pin.created_at.strftime("%m-%d-%y") %></p>
 
-        <% if @pin.user == current_user %>
-           <%= link_to edit_pin_path(@pin) do %>
-              <span class="glyphicon glyphicon-pencil"></span> Edit 
-            <% end %>
-        <% end %>
+          <% if @pin.user == current_user %>
+             <%= link_to edit_pin_path(@pin) do %>
+                <span class="glyphicon glyphicon-pencil"></span> Edit 
+              <% end %>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </div>  
-</div>
+    </div>  
+  </div>
+</div>  
