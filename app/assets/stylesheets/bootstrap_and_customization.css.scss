@@ -31,10 +31,23 @@ $pagination-color:               black;
   font-family: 'Mountains of Christmas';
 }
 
+.btn-default {
+  font-weight: bold;
+}
+
+.btn-primary {
+  font-weight: bold;
+}
+
+.btn-back {
+  background: white;
+}
+
 .panel-footer {
-  background:   #D7DDDE;
+  background:   #f5f5f5;
   text-align:   center;
 }
+
 
 
 .panel-default {
@@ -77,5 +90,15 @@ p {
   opacity: 0.8;
   border-radius: 50px;
   padding: 10px;
+  margin: 10px;
+}
+
+.ornament-block {
+  display: inline-block;
+  background: white;
+  border-radius: 10px;
+  border-color: red;
+  border-width: 2px;
+  padding: 30px;
   margin: 10px;
 }
