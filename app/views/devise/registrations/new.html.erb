@@ -1,7 +1,7 @@
 <div class="container">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h1>Sign up</h2>
+      <h1>Sign up</h1>
     </div> 
     <div class="panel-body">
       <div class="normal-text">
@@ -10,7 +10,7 @@
         <%= devise_error_messages! %>
 
         <div class="form-group">
-          <%= f.label :name %>
+          <%= f.label :name %> (Appears as username)
           <%= f.text_field :name, autofocus: true, class: "form-control" %>
         </div>
 

@@ -28,7 +28,7 @@ $pagination-color:               black;
 
 .navbar-brand {
   font-weight: bold;
-  font-family: 'Monda';
+  font-family: 'Mountains of Christmas';
 }
 
 .panel-footer {
@@ -36,6 +36,12 @@ $pagination-color:               black;
   text-align:   center;
 }
 
+
+.panel-default {
+  border-color: green;
+  border-width: 2px;
+  box-shadow: 1px 1px 1px black;
+}
 
 .jumbotron {
     margin-bottom: 0px;
