@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @ornament.user %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ornament.description %>
+</p>
+
+<%= link_to 'Edit', edit_ornament_path(@ornament) %> |
+<%= link_to 'Back', ornaments_path %>

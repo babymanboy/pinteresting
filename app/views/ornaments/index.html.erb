@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ornaments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ornaments.each do |ornament| %>
+      <tr>
+        <td><%= ornament.user %></td>
+        <td><%= ornament.description %></td>
+        <td><%= link_to 'Show', ornament %></td>
+        <td><%= link_to 'Edit', edit_ornament_path(ornament) %></td>
+        <td><%= link_to 'Destroy', ornament, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ornament', new_ornament_path %>
